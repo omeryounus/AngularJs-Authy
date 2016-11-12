@@ -1,0 +1,14 @@
+<div class="col-md-6 col-md-offset-3">
+<h2>Soft Token Verification</h2>
+    <form name="form" ng-submit="vm.verify()" role="form">
+        <div class="form-group" ng-class="{ 'has-error': form.token.$dirty && form.token.$error.required }">
+            <input  type="text" name="token" id="authy-token"  type="text" value="" class="form-control" ng-model="vm.token" placeholder="Authy SoftToken"
+                    />
+            <span ng-show="form.token.$dirty && form.token.$error.required" class="help-block">Token is required</span>
+        </div>
+
+        <div class="form-actions">
+            <input type="submit" value="Verify"  ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary btn-block">
+        </div>
+    </form>
+</div>

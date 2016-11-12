@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS User login and signup </title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <link href="css/app.css" rel="stylesheet" />
+  <link href="https://www.authy.com/form.authy.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+      <div ng-view></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="//code.angularjs.org/1.2.20/angular.js"></script>
+<script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
+<script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
+
+
+<script src="app.js"></script>
+<script src="services/authentication.service.js"></script>
+<script src="services/message.service.js"></script>
+
+<script src="services/user.service.local-storage.js"></script>
+
+<script src="controller/home.controller.js"></script>
+<script src="controller/login.controller.js"></script>
+<script src="controller/register.controller.js"></script>
+<script src="controller/verify.controller.js"></script>
+<script src="https://www.authy.com/form.authy.min.js"></script>
+
+</body>
+</html>
