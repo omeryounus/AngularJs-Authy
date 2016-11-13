@@ -10,7 +10,7 @@
   , "npm": "3.10.3"
   },
   "dependencies": {
-    "express": "^4.9.8"
+    "express": "^4.9.8",
     "http": "latest",
     "path": "latest",
     "morgan": "latest",
