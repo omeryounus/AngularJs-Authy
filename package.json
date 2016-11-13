@@ -6,6 +6,16 @@
   "repository": "https://github.com/omeryounus/Angular2-testapp",
   "license": "MIT",
   "devDependencies": {
+    
+    "express": "latest",
+    "http": "latest",
+    "path": "latest",
+    "morgan": "latest",
+    "body-parser":"latest",
+    "serve-favicon":"latest",
+    "cookie-parser":"latest",
+    "authy": "latest",
+    
     "angular": "^1.5.8",
     "angular-mocks": "^1.5.8",
     "angular-ui-router": "^0.3.2",
