@@ -5,6 +5,10 @@
   "description": "A demo project for AngularJs signIn and Signup creation",
   "repository": "https://github.com/omeryounus/Angular2-testapp",
   "license": "MIT",
+  "engines": {
+    "node": "6.3.1"
+  , "npm": "3.10.3"
+  },
   "devDependencies": {
     
     "express": "latest",
