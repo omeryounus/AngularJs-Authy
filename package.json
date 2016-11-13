@@ -9,9 +9,8 @@
     "node": "6.3.1"
   , "npm": "3.10.3"
   },
-  "devDependencies": {
-    
-    "express": "latest",
+  "dependencies": {
+    "express": "^4.9.8"
     "http": "latest",
     "path": "latest",
     "morgan": "latest",
